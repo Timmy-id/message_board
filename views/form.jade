@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1= title
+    form(method="post", action="/new")
+        div.input
+            span.label Author
+            input(type="text", name="author")
+        
+        div.input
+            span.label Message
+            input(type="text", name="message")
+    
+        div.actions
+            input(type="submit", value="Add")
